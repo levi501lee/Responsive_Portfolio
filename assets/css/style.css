@@ -217,26 +217,49 @@ input[type=submit] {
 }
 
 /* @media screen tags, each with one of these max-widths: 980px, 768px and 640px */
-@media screen and (max-width: 980px) {
-  .wrapper {
-    width: 950px;
-  }
+@media screen and (max-width: 979px) {
+.container {
+  padding: 0 20px;
+  max-width: 768px;
 }
+
+  #main-container {
+padding-top: 120px;
+}
+.main-section {
+  max-width: 620px;
+}
+.work {
+width: 100%
+}
+.auth-image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+}
+
 
 
 @media screen and (max-width: 768px) {
-  .wrapper {
-    width: 600px;
-    padding: 20px;
+  .main-section {
+    /* <img src="assets/images/technics-q-c-640-480-1.jpg" alt="Word Guess">; */
+   max-width: 100%;
+  }
+  #main-container {
+    overflow: auto;
   }
 }
 
-@media screen and (max-width: 640px) {
-  .wrapper {
-    width: 100%;
-    padding: 20px;
-  }
-  #masthead {
-    position: absolute;
-  }
+@media screen and (max-width: 580px) {
+#logo {
+  width:100%;
+}
+nav {
+  float: left;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.main-section {
+  margin-top: 100px;
+}
 }
